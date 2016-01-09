@@ -1,0 +1,83 @@
+// resume.scss
+
+// vars
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+$primary-color: rgba(0,0,0,0.75)
+$background-color: rgba(255,255,255,0.5)
+$h2-color: rgba(25, 25, 200, 0.8)
+$copy-color: rgba(0,0,0,0.65)
+$left-column-width: 38em
+$right-column-width: 14em
+
+// typography
+body
+  font-size: 0.8em
+  font-family: $font-stack
+  color: $primary-color
+  background: $background-color
+  margin: 2em
+
+// used for name
+h1
+  font-size: 3em
+  margin-bottom: 0.25em
+  margin-top: 0em
+
+// used for info section headers
+h2
+  color: $h2-color
+  text-transform: uppercase
+  font-size: 1em
+  margin-bottom: 2em
+  margin-top: 3em
+
+// used for company name / location / title
+h3
+  font-weight: normal
+  margin-bottom: 0em
+
+// used for time periods
+h4
+  margin-top: 0.25em
+  margin-bottom: 0.25em
+  text-transform: uppercase
+  font-weight: lighter
+  font-size: 0.9em
+  color: $copy-color
+
+// address and contact info
+#metadata
+  font-size: 0.9em
+
+// tagline
+#header
+  p
+    font-size: 0.9em
+
+// tools and skills column
+#skills, #tools
+  p
+    line-height: 1.5em
+    color: $copy-color
+
+// each role / exp section
+.info-section
+  p
+    margin-top: 0em
+    line-height: 1.5em
+
+// layout
+#resume-container
+  display: flex
+  flex-direction: row
+  justify-content: center
+
+  #right-column
+    width: $right-column-width
+    margin-left: 1em
+    margin-right: 1em
+
+  #left-column
+    width: $left-column-width
+    margin-left: 1em
+    margin-right: 1em
